@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>welcome to home page</h1>
+<main class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="mockup-phone border border-gray-300">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3 p-4">
+
+             <!-- available balance section -->
+             <div class="bg-gray-100 p-4 rounded-lg shadow-md text-center mb-4">
+                <div class="text-4xl font-bold">9400</div>
+                <div class="text-gray-500">Available Balance</div>
+             </div>
+
+             <!-- user action buttons -->
+             <div class="flex justify-between mb-4">
+                <button class="btn w-1/2 bg-gray-200 text-gray-700 hover:bg-gray-300">Add Money</button>
+                <button class="btn w-1/2 ml-2 bg-gray-200 text-gray-700 hover:bg-gray-300">Cash Out</button>
+             </div>
+
+             <!-- add money form start -->
+             <div class="bg-white p-6 rounded-lg shadow-lg">
+                <form>
+                  <div class="form-control mb-4">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input type="text" placeholder="Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mb-4">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <button class="btn btn-primary text-white w-full">Add Money</button>
+                  </div>
+                </form>
+              </div>
+              <!-- add money form end -->
+
+          </div>
+        </div>
+    </div>
+</main>
+<script src="./js/home.js"></script>
 </body>
 </html>
