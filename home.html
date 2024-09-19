@@ -17,42 +17,65 @@
 
              <!-- available balance section -->
              <div class="bg-gray-100 p-4 rounded-lg shadow-md text-center mb-4">
-                <div class="text-4xl font-bold">9400</div>
+                <div id="balance" class="text-4xl font-bold">9400</div>
                 <div class="text-gray-500">Available Balance</div>
              </div>
 
              <!-- user action buttons -->
              <div class="flex justify-between mb-4">
-                <button class="btn w-1/2 bg-gray-200 text-gray-700 hover:bg-gray-300">Add Money</button>
-                <button class="btn w-1/2 ml-2 bg-gray-200 text-gray-700 hover:bg-gray-300">Cash Out</button>
+                <button id="btn-show-add-money" class="btn w-1/2bg-gray-100 text-gray-700 hover:bg-gray-300">Add Money</button>
+                <button id="btn-show-cash-out" class="btn w-1/2 ml-2 bg-gray-100 text-gray-700 hover:bg-gray-300">Cash Out</button>
              </div>
 
              <!-- add money form start -->
-             <div class="bg-white p-6 rounded-lg shadow-lg">
+             <div id="add-money-form" class=" bg-white p-6 rounded-lg shadow-lg">
                 <form>
                   <div class="form-control mb-4">
                     <label class="label">
                       <span class="label-text">Amount</span>
                     </label>
-                    <input type="text" placeholder="Amount" class="input input-bordered" required />
+                    <input id="input-add-money" type="text" placeholder="Amount" class="input input-bordered" required />
                   </div>
                   <div class="form-control mb-4">
                     <label class="label">
                       <span class="label-text">Pin</span>
                     </label>
-                    <input type="password" placeholder="password" class="input input-bordered" required />
+                    <input id="input-pin-number" type="password" placeholder="password" class="input input-bordered" required />
                   </div>
                   <div class="form-control">
-                    <button class="btn btn-primary text-white w-full">Add Money</button>
+                    <button id="btn-add-money" class="btn btn-primary text-white w-full">Add Money</button>
                   </div>
                 </form>
               </div>
               <!-- add money form end -->
+               <!-- cashout start  -->
+               <div id="cash-out-form" class="bg-white p-6 rounded-lg shadow-lg hidden">
+                <form>
+                  <div class="form-control mb-4">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="input-cash-out" type="text" placeholder="Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mb-4">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input id="input-cash-out-pin" type="password" placeholder="password" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <button id="btn-cashout" class="btn btn-primary text-white w-full">Cash Out </button>
+                  </div>
+                </form>
+              </div>
+               <!-- cashout end  -->
 
           </div>
         </div>
     </div>
 </main>
 <script src="./js/home.js"></script>
+<script src="./js/cashOut.js"></script>
+<script src="./js/features.js"></script>
 </body>
 </html>
